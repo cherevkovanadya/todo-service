@@ -1,0 +1,118 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: cherevkovanadya
+      changes:
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: username
+                  value: "Надежда Черевкова"
+              - column:
+                  name: email
+                  value: "nadyachery@gmail.com"
+              - column:
+                  name: created_at
+                  value: "2025-04-20 12:00:00"
+              - column:
+                  name: is_active
+                  value: true
+
+  - changeSet:
+      id: 4
+      author: cherevkovanadya
+      changes:
+        - insert:
+            tableName: task
+            columns:
+              - column:
+                  name: title
+                  value: "Купить диван"
+              - column:
+                  name: description
+                  value: "Найти билеты на авиасейлс. Слетать в Европу. Найти ИКЕА. Купить диван."
+              - column:
+                  name: priority
+                  value: "Высокая"
+              - column:
+                  name: status
+                  value: "Новая"
+              - column:
+                  name: created_at
+                  value: "2025-04-20 12:30:00"
+              - column:
+                  name: user_id
+                  value: 1
+
+  - changeSet:
+      id: 5
+      author: cherevkovanadya
+      changes:
+        - insert:
+            tableName: task
+            columns:
+              - column:
+                  name: title
+                  value: "Записаться к врачу"
+              - column:
+                  name: description
+                  value: "Проверить зрение и сдать анализы"
+              - column:
+                  name: priority
+                  value: "Средняя"
+              - column:
+                  name: status
+                  value: "В процессе"
+              - column:
+                  name: created_at
+                  value: "2025-04-21 09:00:00"
+              - column:
+                  name: user_id
+                  value: 1
+
+  - changeSet:
+      id: 6
+      author: cherevkovanadya
+      changes:
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: username
+                  value: "Иван Иванов"
+              - column:
+                  name: email
+                  value: "ivanivanov@yandex.com"
+              - column:
+                  name: created_at
+                  value: "2025-04-20 13:00:00"
+              - column:
+                  name: is_active
+                  value: true
+
+  - changeSet:
+      id: 7
+      author: cherevkovanadya
+      changes:
+        - insert:
+            tableName: task
+            columns:
+              - column:
+                  name: title
+                  value: "Закончить проект"
+              - column:
+                  name: description
+                  value: "Доделать тесты и документацию"
+              - column:
+                  name: priority
+                  value: "Критичная"
+              - column:
+                  name: status
+                  value: "Завершена"
+              - column:
+                  name: created_at
+                  value: "2025-04-22 18:00:00"
+              - column:
+                  name: user_id
+                  value: 2
